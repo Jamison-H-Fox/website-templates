@@ -7,8 +7,22 @@ const StyledSection = styled.section`
     display: flex;
     justify-content: center;
 
+    // & * {
+    //     border: red 1px solid;
+    // }
+
+    & .image {
+        width: 25%;
+        margin-right: 2.5%;
+        background-image: url('${aboutData.about_Image}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     & .text {
-        width: 60%;
+        margin-left: 2.5%;
+        width: 45%;
         border: 3px solid #4f4f4f;
         background-color: #fff;
         text-align: center;
@@ -35,7 +49,10 @@ function About() {
 
 
     return (
-        <StyledSection id='about'>
+        <StyledSection id="about">
+            <div className="image">
+
+            </div>
             <div className="text">
                 {aboutData.icon}
                 <h2>{aboutData.header}</h2>

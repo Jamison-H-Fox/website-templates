@@ -6,22 +6,35 @@ import { brandPallet } from "../data/data";
 const StyledSection = styled.section`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+
+    // & * {
+    //     border: red 1px solid;
+    // }
 
     & h2 {
         font-family: ${brandPallet.primaryFont};
         width: 100%;
+        margin-bottom: 2.5%;
     }
 
     & .left, .right {
-        width: 50%;
+        width: 33%;
         padding: 4% 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    & .map {
+        display: flex;
+
+    }
+
     & .contact-info {
-        width: 50%;
+        width: 85%;
         line-height: 2;
 
         & h3 {
@@ -37,7 +50,9 @@ const StyledSection = styled.section`
     }
 
     & .img-container {
-        width: 70%;
+        width: 85%;
+        display: flex;
+        
     }
 `
 
@@ -46,8 +61,11 @@ function Contact() {
 
 
     return (
-        <StyledSection>
+        <StyledSection id="contact">
             <h2>{contactData.mainText}</h2>
+            <div className="map">
+                {contactData.mapEmbedCode}
+            </div>
             <div className="left">
                 <div className="contact-info">
                     <h3>{contactData.greeting}</h3>

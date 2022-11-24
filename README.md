@@ -12,9 +12,11 @@ MVP:
 
 [x] Stylize components and move away from App.css *done except for media queries*
 
-[ ] Module for adding font resources
+[x] Map widget in contact 
 
-[ ] Option for picture adjacent in the About component
+[x] Option for picture adjacent in the About component
+
+[ ] Module for adding font resources
 
 [ ] Make 'services' have click to expand info
 
@@ -22,16 +24,18 @@ MVP:
 
 [ ] Fix section #ids to match values from data.headerData.linklist
 
+[ ] Request contact form
+
+[ ] CTA button that loads contact form
+
 Roadmap:
+
+[ ] Dark theme toggle
 
 [ ] Make media stops for screen scaling
 
 components to add:
 
 [ ] Weather widget?
-
-[ ] Request contact form
-
-[ ] CTA button that loads contact form
 
 [ ] Gallery component for displaying customer work

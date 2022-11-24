@@ -6,7 +6,7 @@ const StyledSection = styled.section`
     height: 40vh;
     background-image: url('${spacerImgageData.spacerImgage_URL}');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
 `
