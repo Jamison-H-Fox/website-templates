@@ -1,4 +1,4 @@
-MVP:
+***MVP***
 
 [x] Make website title and favicon editable from data.js
 
@@ -16,26 +16,38 @@ MVP:
 
 [x] Option for picture adjacent in the About component
 
-[ ] Module for adding font resources
+[x] Make 'services' have click to expand info
 
-[ ] Make 'services' have click to expand info
+    [ ] Handle click event on <h3> or <i> elements
 
-[ ] Make testimonials a carousel
+    [ ] Restyle .details-box to accomodate text/img side by side
 
-[ ] Fix section #ids to match values from data.headerData.linklist
+[ ] Testimonials carousel component
 
-[ ] Request contact form
-
-[ ] CTA button that loads contact form
-
-Roadmap:
-
-[ ] Dark theme toggle
+[ ] CTA button/contact form component
 
 [ ] Make media stops for screen scaling
 
-components to add:
+    [ ] Tablet @xxxx
 
-[ ] Weather widget?
+    [ ] Mobile @xxx
+
+[ ] Module for adding font resources from data.js
+
+[ ] Fix section #ids to match values from data.headerData.linklist
+
+***Roadmap***
+
+Useability:
+
+[ ] Light/Dark/Medium theme selector
+
+Components to add:
+
+[ ] Weather widget? (may be cool for location-based businesses)
 
 [ ] Gallery component for displaying customer work
+
+[ ] Testimonial carousel
+
+[ ] CTA button w/ pop-out info request form

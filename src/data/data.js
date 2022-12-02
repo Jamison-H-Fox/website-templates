@@ -12,7 +12,7 @@ export const topData = {
     mainHeading: 'We Design Stuff',
     subHeading1: 'and make your brand look good',
     subHeading2: "",
-    topImage_URL: './resources/top/R.jpg'
+    topImage_URL: './resources/top/lolR.jpg'
 }
 
 export const spacerImgageData = {
@@ -23,7 +23,11 @@ export const servicesData = {
     mainText: 'Services We Offer:',
     serviceNames: ['Logo and Brand Consulting','Website Construction','Custom Web Apps'],
     serviceIcons: [<i className="fa-solid fa-pen-ruler"></i>,<i className="fa-solid fa-wrench"></i>,<i className="fa-brands fa-react"></i>],
-    serviceDetails: ['lorem ipsum','lorem ipsum','lorem ipsum']
+    serviceDetails: ['Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves swat at dog  intently sniff hand  why must they do that bag stretch, flop over chase imaginary bugs  rub face on everything inspect anything brought into the house all of a sudden go crazy chase mice  claw drapes lick butt need to chase tail  stand in front of the computer screen . Give attitude flop over why must they do that  claw drapes flop over behind the couch chase mice swat at dog need to chase tail bag stretch hunt anything that moves,  stand in front of the computer screen   rub face on everything hide when guests come over inspect anything brought into the house attack feet hopped up on goofballs  intently sniff hand  chase imaginary bugs. Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on',
+                     'Doggo ipsum wow such tempt pupper boofers, shoober. Pupperino fat boi stop it fren lotsa pats pats porgo, aqua doggo wow such tempt super chub.  Such treat I am bekom fat length boy wow very biscit, maximum borkdrive. Doggorino heckin angery woofer long water shoob snoot, doing me a frighten. Long woofer fluffer long bois dat tungg tho bork boof puggo vvv, big ol pupper pats shoob heckin good boys and girls very good spot. Heckin good boys and girls mlem what a nice floof long bois, doggorino many pats. Wrinkler fluffer borkf heckin adorable doggo, long woofer the neighborhood pupper very taste wow smol, mlem heckin good boys and girls very hand that feed shibe. Shoober you are doing me the shock heckin puggorino I am bekom fat, tungg adorable doggo.',
+                     'We don’t serve their kind here! What? Your droids. They’ll have to wait outside. We don’t want them here. Listen, why don’t you wait out by the speeder. We don’t want any trouble. I heartily agree with you sir. Negola dewaghi wooldugger?!? He doesn’t like you. I’m sorry. I don’t like you either You just watch yourself. We’re wanted men. I have the death sentence in twelve systems. I’ll be careful than. You’ll be dead. This little one isn’t worth the effort. Come let me buy you something… The approach will not be easy. You are required to maneuver straight down this trench and skim the surface to this point. The target area is only two meters wide. It’s a small thermal exhaust port, right below the main port. A precise hit will start a chain reaction which should destroy the station. This little one isn’t worth the effort. Come let me buy you something…'
+                    ],
+    ctaButtonText: 'Learn More!'
 }
 
 export const aboutData = {
@@ -58,14 +62,14 @@ export const contactData = {
 export const footerData = {
     socialGreeting: 'Connect with us on social media',
     socialLinks: ["http://instagram.com","http://facebook.com","http://twitter.com",'http://linkedin.com'],
-    socialIcons: [<i className="fa-brands fa-instagram"></i>,<i className="fa-brands fa-square-facebook"></i>,<i className="fa-brands fa-square-twitter"></i>,<i className="fa-brands fa-tiktok"></i>],
+    socialIcons: [<i className="fa-brands fa-instagram"></i>,<i className="fa-brands fa-square-facebook"></i>,<i className="fa-brands fa-square-twitter"></i>,<i className="fa-brands fa-linkedin"></i>],
     linkList: [...headerData.linkList],
     copyright: '© silverFox Design 2022'
 }
 
 export const brandPallet = {
     primaryColor: '#a0a1a4',
-    secondaryColor: '',
+    secondaryColor: '#dadbd5',
     primaryFont: `"PT Sans", sans-serif`,
     secondaryFont: `"Nunito", sans-serif`,    
 }

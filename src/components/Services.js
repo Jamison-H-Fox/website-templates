@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { servicesData } from '../data/data'
 import styled from 'styled-components'
 import { brandPallet } from "../data/data";
 
-const StyledSection = styled.section`
-    
+const StyledSection = styled.section`    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     & h2 {
         font-family: ${brandPallet.primaryFont};
     }
-
+    
     & .container {
+        width: 100%;
         margin-top: 5%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         
         & .box {
             width: 20%;
@@ -24,6 +28,7 @@ const StyledSection = styled.section`
             &:hover {
                 color: ${brandPallet.primaryColor};
                 border: 3px solid ${brandPallet.primaryColor};
+                cursor: pointer;
             }
 
             & h3 {
@@ -34,10 +39,67 @@ const StyledSection = styled.section`
             }
         }
     }
+
+    & #details-box {
+        position: relative;
+        width: 66%;
+        border: 3px solid #4f4f4f;
+        text-align: center;
+        padding: 2.5%;
+        background-color: #fff;
+        margin-top: 5%;
+
+        & .fa-xmark {
+            position: absolute;
+            top: 10px;
+            right: 7.5px;
+            width: 15px;
+            font-size: 2rem;
+
+            &:hover {
+                color: red;
+                cursor: pointer;
+            }
+        }
+
+        & button {
+            font-size: 1.75rem;
+            font-family: ${brandPallet.primaryFont};
+            background-color: ${brandPallet.primaryColor};
+            border-radius: 10px;
+            border: none;
+            padding: 2.5%;
+            margin-top: 5%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    & .hidden {
+        display: none;
+    }
+
 `
 
 function Services() {
+    const [detailsText, setDetailsText] = useState('');
 
+    function hideDetails() {
+        const detailsBox = document.getElementById('details-box');
+        detailsBox.classList.toggle('hidden');
+    };
+
+    function changeText(event) {
+        const text = event.nativeEvent.srcElement.dataset.detailstext;
+        setDetailsText(text)
+
+        const detailsBox = document.getElementById('details-box');
+        if (detailsBox.classList.length === 1) {
+            detailsBox.classList.toggle('hidden');
+        }  
+    };
 
     return (
         <StyledSection id='services'>
@@ -45,37 +107,24 @@ function Services() {
             <div className="container">
                 {servicesData.serviceNames.map((element, index) => {
                     return (
-                        <div key={index} className="box">
+                        <div onClick={(event) => changeText(event)} 
+                            key={index} 
+                            className="box"
+                            data-detailstext={servicesData.serviceDetails[index]}
+                            >
                             {servicesData.serviceIcons[index]}
-                            <h3>{element}</h3>
-                        </div>
+                            <h3>{element}</h3>                                
+                        </div>                        
                     )
                 })}
+            </div>
+            <div className='hidden' id='details-box'>
+                <p>{detailsText}</p>
+                <i className="fa-solid fa-xmark" onClick={() => hideDetails()}></i>
+                <button>{servicesData.ctaButtonText}</button>
             </div>
         </StyledSection>
     )
 }
 
 export default Services;
-
-/* <section id="farm">
-    <h2>Farm Fresh</h2>
-    <div class="container">
-        <div class="box">
-            <i class="fas fa-cheese"></i>
-            <h3>Dairy</h3>
-        </div>
-        <div class="box">
-            <i class="fas fa-egg"></i>
-            <h3>Eggs</h3>
-        </div>
-        <div class="box">
-            <i class="fas fa-carrot"></i>
-            <h3>Produce</h3>
-        </div>
-        <div class="box">
-            <i class="fas fa-bread-slice"></i>
-            <h3>Bakery</h3>
-        </div>
-    </div>
-</section> */
