@@ -20,7 +20,7 @@
 
     [x] Handle click event on <h3> or <i> elements
 
-    [ ] Restyle .details-box to accomodate text/img side by side
+    [x] Restyle .details-box to accomodate text/img side by side
 
 [ ] Testimonials carousel component
 
@@ -28,9 +28,9 @@
 
 [ ] Make media stops for screen scaling
 
-    [ ] Tablet @xxxx
+    [ ] Tablet @1008
 
-    [ ] Mobile @xxx
+    [ ] Mobile @640
 
 [ ] Module for adding font resources from data.js
 

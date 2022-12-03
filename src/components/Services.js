@@ -41,18 +41,36 @@ const StyledSection = styled.section`
     }
 
     & #details-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         position: relative;
-        width: 66%;
+        width: 75%;
         border: 3px solid #4f4f4f;
         text-align: center;
         padding: 2.5%;
         background-color: #fff;
         margin-top: 5%;
 
+        & .break {
+            width: 100%;
+        }
+
+        & p {
+            width: 45%;
+            align-self: center;
+        }
+
+        & .details-img {
+            width: 45%;
+            align-self: center;
+        }
+
         & .fa-xmark {
             position: absolute;
             top: 10px;
-            right: 7.5px;
+            right: 10px;
             width: 15px;
             font-size: 2rem;
 
@@ -68,22 +86,23 @@ const StyledSection = styled.section`
             border-radius: 10px;
             border: none;
             padding: 2.5%;
-            margin-top: 5%;
-
+            margin-top: 2.5%;
+            
             &:hover {
-                cursor: pointer;
+                cursor: pointer;                   
             }
         }
     }
 
     & .hidden {
-        display: none;
+        display: none !important;
     }
 
 `
 
 function Services() {
     const [detailsText, setDetailsText] = useState('');
+    const [detailsImg, setDetailsImg] = useState('');
 
     function hideDetails() {
         const detailsBox = document.getElementById('details-box');
@@ -92,13 +111,16 @@ function Services() {
 
     function changeText(event) {
         if (event.nativeEvent.path.length === 9) {
-            const text = event.nativeEvent.srcElement.dataset.detailstext;
+            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.dataset.index];
+            const img = servicesData.serviceDetailsImg[event.nativeEvent.srcElement.dataset.index];
             setDetailsText(text);
+            setDetailsImg(img);
         } else {
-            const text = event.nativeEvent.srcElement.parentElement.dataset.detailstext;
+            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.parentElement.dataset.index];
+            const img = servicesData.serviceDetailsImg[event.nativeEvent.srcElement.parentElement.dataset.index];
             setDetailsText(text);
-        };
-                     
+            setDetailsImg(img);
+        };                     
 
         const detailsBox = document.getElementById('details-box');
         if (detailsBox.classList.length === 1) {
@@ -114,8 +136,8 @@ function Services() {
                     return (
                         <div onClick={(event) => changeText(event)} 
                             key={index} 
-                            className="box"
-                            data-detailstext={servicesData.serviceDetails[index]}
+                            className="box"                            
+                            data-index={index}
                             >
                             {servicesData.serviceIcons[index]}
                             <h3>{element}</h3>                                
@@ -125,7 +147,9 @@ function Services() {
             </div>
             <div className='hidden' id='details-box'>
                 <p>{detailsText}</p>
+                <div className='details-img'><img src={detailsImg}/></div>
                 <i className="fa-solid fa-xmark" onClick={() => hideDetails()}></i>
+                <div className='break'></div>
                 <button>{servicesData.ctaButtonText}</button>
             </div>
         </StyledSection>
