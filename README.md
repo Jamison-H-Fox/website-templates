@@ -18,7 +18,7 @@
 
 [x] Make 'services' have click to expand info
 
-    [ ] Handle click event on <h3> or <i> elements
+    [x] Handle click event on <h3> or <i> elements
 
     [ ] Restyle .details-box to accomodate text/img side by side
 

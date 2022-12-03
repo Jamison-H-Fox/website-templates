@@ -12,7 +12,7 @@ export const topData = {
     mainHeading: 'We Design Stuff',
     subHeading1: 'and make your brand look good',
     subHeading2: "",
-    topImage_URL: './resources/top/lolR.jpg'
+    topImage_URL: './resources/top/R.jpg'
 }
 
 export const spacerImgageData = {

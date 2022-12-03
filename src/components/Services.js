@@ -56,8 +56,7 @@ const StyledSection = styled.section`
             width: 15px;
             font-size: 2rem;
 
-            &:hover {
-                color: red;
+            &:hover {                
                 cursor: pointer;
             }
         }
@@ -92,13 +91,19 @@ function Services() {
     };
 
     function changeText(event) {
-        const text = event.nativeEvent.srcElement.dataset.detailstext;
-        setDetailsText(text)
+        if (event.nativeEvent.path.length === 9) {
+            const text = event.nativeEvent.srcElement.dataset.detailstext;
+            setDetailsText(text);
+        } else {
+            const text = event.nativeEvent.srcElement.parentElement.dataset.detailstext;
+            setDetailsText(text);
+        };
+                     
 
         const detailsBox = document.getElementById('details-box');
         if (detailsBox.classList.length === 1) {
             detailsBox.classList.toggle('hidden');
-        }  
+        }        
     };
 
     return (
