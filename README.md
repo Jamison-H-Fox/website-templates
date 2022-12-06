@@ -42,6 +42,8 @@ Useability:
 
 [ ] Light/Dark/Medium theme selector
 
+[ ] Line breaks for text blocks
+
 Components to add:
 
 [ ] Weather widget? (may be cool for location-based businesses)
@@ -51,3 +53,7 @@ Components to add:
 [ ] Testimonial carousel
 
 [ ] CTA button w/ pop-out info request form
+
+[ ] Mission statement (really similar to about, bit more focused)
+
+[ ] Target audience (focused text, no images)
