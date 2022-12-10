@@ -3,7 +3,7 @@ import { servicesData } from '../data/data'
 import styled from 'styled-components'
 import { brandPallet } from "../data/data";
 
-const StyledSection = styled.section`    
+const StyledSection = styled.section` 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,10 +57,19 @@ const StyledSection = styled.section`
             width: 100%;
         }
 
-        & p {
+        & .details-text {
+            display: flex;
+            flex-direction: column;
             width: 45%;
             align-self: center;
+
+            & p {
+                margin: 2.5% 0 2.5% 0;
+                align-self: center;
+                text-align: justify;
+            }
         }
+
 
         & .details-img {
             width: 45%;
@@ -69,8 +78,8 @@ const StyledSection = styled.section`
 
         & .fa-xmark {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 20px;
             width: 15px;
             font-size: 2rem;
 
@@ -101,7 +110,7 @@ const StyledSection = styled.section`
 `
 
 function Services() {
-    const [detailsText, setDetailsText] = useState('');
+    const [detailsText, setDetailsText] = useState(['lol','lolz']);
     const [detailsImg, setDetailsImg] = useState('');
 
     function hideDetails() {
@@ -111,12 +120,12 @@ function Services() {
 
     function changeText(event) {
         if (event.nativeEvent.path.length === 9) {
-            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.dataset.index];
+            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.dataset.index].split('&!&');
             const img = servicesData.serviceDetailsImg[event.nativeEvent.srcElement.dataset.index];
             setDetailsText(text);
             setDetailsImg(img);
         } else {
-            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.parentElement.dataset.index];
+            const text = servicesData.serviceDetails[event.nativeEvent.srcElement.parentElement.dataset.index].split('&!&');
             const img = servicesData.serviceDetailsImg[event.nativeEvent.srcElement.parentElement.dataset.index];
             setDetailsText(text);
             setDetailsImg(img);
@@ -128,25 +137,33 @@ function Services() {
         }        
     };
 
+
+
     return (
         <StyledSection id='services'>
             <h2>{servicesData.mainText}</h2>
             <div className="container">
                 {servicesData.serviceNames.map((element, index) => {
                     return (
-                        <div onClick={(event) => changeText(event)} 
-                            key={index} 
-                            className="box"                            
+                        <div 
+                            onClick={(event) => changeText(event)}
+                            key={index}
+                            className="box"
                             data-index={index}
                             >
                             {servicesData.serviceIcons[index]}
-                            <h3>{element}</h3>                                
-                        </div>                        
+                            <h3>{element}</h3>
+                        </div>
                     )
                 })}
             </div>
             <div className='hidden' id='details-box'>
-                <p>{detailsText}</p>
+                {/* {console.log(detailsText)} */}
+                <div className="details-text">
+                    {detailsText.map((string, index) => {
+                        return <p key={index}>{string}</p>
+                    })}
+                </div>
                 <div className='details-img'><img src={detailsImg}/></div>
                 <i className="fa-solid fa-xmark" onClick={() => hideDetails()}></i>
                 <div className='break'></div>

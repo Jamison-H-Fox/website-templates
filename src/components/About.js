@@ -29,6 +29,7 @@ const StyledSection = styled.section`
         padding: 4%;
 
         & p {
+            margin: 2.5% 0 2.5% 0;
             text-align: justify;
             font-family: ${brandPallet.secondaryFont};
         }
@@ -46,17 +47,19 @@ const StyledSection = styled.section`
 `
 
 function About() {
-
-
+    const contentArray = aboutData.content.split('&!&')
+    
     return (
         <StyledSection id="about">
             <div className="image">
 
             </div>
             <div className="text">
-                {aboutData.icon}
+                {aboutData.icon}                
                 <h2>{aboutData.header}</h2>
-                <p>{aboutData.content}</p>
+                {contentArray.map((string, index) => {
+                    return (<p key={index}>{string}</p>)
+                })}
             </div>
         </StyledSection>
     )
