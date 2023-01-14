@@ -10,6 +10,7 @@ const StyledSection = styled.section`
 
     & h2 {
         font-family: ${brandPallet.primaryFont};
+        font-size: 4.5rem;
     }
     
     & .container {
@@ -66,7 +67,7 @@ const StyledSection = styled.section`
             & p {
                 margin: 2.5% 0 2.5% 0;
                 align-self: center;
-                text-align: justify;
+                text-align: center;
             }
         }
 

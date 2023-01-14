@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Header";
-import Top from "./Top";
-import Services from "./Services";
-import SpacerImage from "./SpacerImage";
-import About from "./About";
-import Testimonials from "./Testimonials";
-import Contact from "./Contact";
-import Footer from "./Footer";
-import { docData } from "../data/data";
+import Header from "./components/Header";
+import Top from "./components/Top";
+import Services from "./components/Services";
+import SpacerImage from "./components/SpacerImage";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { docData } from "./data/data";
 
 function App() {
 

@@ -18,12 +18,12 @@ const StyledHeader = styled.header`
 
     & .logo {
         background-image: url('${headerData.logoImg}');
-        height: 8vh;
+        height: 12vh;
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;
         width: 25%;
-        margin-left: 3%;
+        margin-left: 10%;
         opacity: .75;
     }
     

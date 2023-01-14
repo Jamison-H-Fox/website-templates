@@ -19,8 +19,22 @@ const StyledSection = styled.section`
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 5px;
 
-        & h1, h2 {
+        & h1 {
             font-family: ${brandPallet.primaryFont};
+        }
+
+        & h2 {
+            font-family: ${brandPallet.primaryFont};
+        }
+
+        & .break1 {
+            width: 100%;
+            height: 3vh;
+        }
+
+        & .break2 {
+            width: 100%;
+            height: 5vh;
         }
     }
 `
@@ -32,7 +46,10 @@ function Top() {
         <StyledSection id="home">
             <div className="titles">
                 <h1>{topData.mainHeading}</h1>
-                <h2>{topData.subHeading1}<br/>{topData.subHeading2}</h2>
+                <div className="break1"></div>
+                <h2>{topData.subHeading1}<br/>
+                <div className="break2"></div>
+                {topData.subHeading2}</h2>
             </div>
         </StyledSection>
     )

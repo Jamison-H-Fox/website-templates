@@ -36,7 +36,7 @@ const StyledFooter = styled.footer`
 
         & .social {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 10%;
         }
     }
@@ -58,7 +58,7 @@ const StyledFooter = styled.footer`
         }
 
         & a {
-            margin 2% 0;
+            margin: 2% 0;
             text-decoration: none;
         }
     

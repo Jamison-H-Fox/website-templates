@@ -16,11 +16,13 @@
 
 [x] Option for picture adjacent in the About component
 
-[x] Make 'services' have click to expand info
+[!] Make 'services' have click to expand info
 
     [x] Handle click event on <h3> or <i> elements
 
     [x] Restyle .details-box to accomodate text/img side by side
+
+    [ ] Add heading to .details-box (from selected service)
 
 [ ] Testimonials carousel component
 
@@ -40,20 +42,24 @@
 
 Useability:
 
+[x] Line breaks for text blocks
+
 [ ] Light/Dark/Medium theme selector
 
-[ ] Line breaks for text blocks
+[ ] Theme selector for rounded/squared/borderless boxes
+
+[ ] Rename 
 
 Components to add:
 
 [ ] Weather widget? (may be cool for location-based businesses)
 
-[ ] Gallery component for displaying customer work
+[ ] Gallery
 
-[ ] Testimonial carousel
+[ ] Carousel
 
 [ ] CTA button w/ pop-out info request form
 
-[ ] Mission statement (really similar to about, bit more focused)
+[ ] Bold Text spacer
 
-[ ] Target audience (focused text, no images)
+[ ] Text chunk

@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutData } from "../data/data";
+import { ImgTextData } from "../data/data";
 import styled from "styled-components";
 import { brandPallet } from "../data/data";
 
@@ -13,15 +13,15 @@ const StyledSection = styled.section`
 
     & .image {
         width: 25%;
-        margin-left: 2.5%;
-        background-image: url('${aboutData.about_Image}');
+        margin-right: 2.5%;
+        background-image: url('${ImgTextData.about_Image}');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     & .text {
-        margin-right: 2.5%;
+        margin-left: 2.5%;
         width: 45%;
         border: 3px solid #4f4f4f;
         background-color: #fff;
@@ -30,13 +30,14 @@ const StyledSection = styled.section`
 
         & p {
             margin: 2.5% 0 2.5% 0;
-            text-align: left;
+            text-align: center;
             font-family: ${brandPallet.secondaryFont};
         }
 
         & h2 {
             font-family: ${brandPallet.primaryFont};
             margin-bottom: 2.5%;
+            font-size: 4.5rem;
         }
 
         & i {
@@ -47,19 +48,19 @@ const StyledSection = styled.section`
 `
 
 function About() {
-    const contentArray = aboutData.content.split('&!&')
+    const contentArray = ImgTextData.content.split('&!&')
     
     return (
         <StyledSection id="about">
+            <div className="image">
+
+            </div>
             <div className="text">
-                {aboutData.icon}                
-                <h2>{aboutData.header}</h2>
+                {ImgTextData.icon}                
+                <h2>{ImgTextData.header}</h2>
                 {contentArray.map((string, index) => {
                     return (<p key={index}>{string}</p>)
                 })}
-            </div>
-            <div className="image">
-
             </div>
         </StyledSection>
     )
