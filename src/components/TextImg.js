@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutData } from "../data/data";
+import { textImgData } from "../data/data";
 import styled from "styled-components";
 import { brandPallet } from "../data/data";
 
@@ -14,7 +14,7 @@ const StyledSection = styled.section`
     & .image {
         width: 25%;
         margin-left: 2.5%;
-        background-image: url('${aboutData.about_Image}');
+        background-image: url('${textImgData.TextImg_Image}');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -46,14 +46,14 @@ const StyledSection = styled.section`
     }
 `
 
-function About() {
-    const contentArray = aboutData.content.split('&!&')
+function TextImg() {
+    const contentArray = textImgData.content.split('&!&')
     
     return (
         <StyledSection id="about">
             <div className="text">
-                {aboutData.icon}                
-                <h2>{aboutData.header}</h2>
+                {textImgData.icon}                
+                <h2>{textImgData.header}</h2>
                 {contentArray.map((string, index) => {
                     return (<p key={index}>{string}</p>)
                 })}
@@ -65,4 +65,4 @@ function About() {
     )
 }
 
-export default About;
+export default TextImg;

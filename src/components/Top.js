@@ -15,7 +15,7 @@ const StyledSection = styled.section`
     align-items: center;
 
     & .titles {
-        padding: 1.25%;
+        padding: 2.5%;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 5px;
 
@@ -34,7 +34,7 @@ const StyledSection = styled.section`
 
         & .break2 {
             width: 100%;
-            height: 5vh;
+            height: 0.5vh;
         }
     }
 `
