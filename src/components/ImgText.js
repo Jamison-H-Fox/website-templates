@@ -47,11 +47,11 @@ const StyledSection = styled.section`
     }
 `
 
-function About() {
+function About(props) {
     const contentArray = ImgTextData.content.split('&!&')
     
     return (
-        <StyledSection id="about">
+        <StyledSection id={props.id}>
             <div className="image">
 
             </div>

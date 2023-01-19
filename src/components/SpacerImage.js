@@ -11,11 +11,11 @@ const StyledSection = styled.section`
     background-repeat: no-repeat;
 `
 
-function SpacerImage() {
+function SpacerImage(props) {
 
 
     return (
-        <StyledSection className="spacer-image">
+        <StyledSection className="spacer-image" id={props.id}>
 
         </StyledSection>
     )

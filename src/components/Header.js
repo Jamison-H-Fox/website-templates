@@ -18,7 +18,7 @@ const StyledHeader = styled.header`
 
     & .logo {
         background-image: url('${headerData.logoImg}');
-        height: 12vh;
+        height: 10vh;
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;
@@ -47,10 +47,10 @@ const StyledHeader = styled.header`
 
 `
 
-function Header() {
+function Header(props) {
 
     return (
-        <StyledHeader>
+        <StyledHeader id={props.id}>
             <nav>
                 <div className="logo">
                 </div>

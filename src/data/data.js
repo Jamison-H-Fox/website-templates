@@ -74,3 +74,9 @@ export const brandPallet = {
     primaryFont: `"PT Sans", sans-serif`,
     secondaryFont: `"Nunito", sans-serif`,    
 }
+
+export const textData = {
+    textHeader: 'Lol this is some cool txt',
+    textDivider: '←↖↑↗→',
+    textBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas integer eget. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Interdum consectetur libero id faucibus nisl tincidunt eget nullam non. Enim neque volutpat ac tincidunt vitae.&!& Turpis egestas pretium aenean pharetra. Pulvinar etiam non quam lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Nunc scelerisque viverra mauris in aliquam. Donec ultrices tincidunt arcu non. Morbi leo urna molestie at elementum eu facilisis sed odio.'
+}

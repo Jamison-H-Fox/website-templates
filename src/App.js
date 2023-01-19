@@ -6,6 +6,7 @@ import SpacerImage from "./components/SpacerImage";
 import TextImg from "./components/TextImg";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Text from "./components/Text";
 import { docData } from "./data/data";
 
 function App() {
@@ -22,11 +23,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Top />
-      <TextImg />
+      <Top id='home'/>
+      <TextImg id='about'/>
       <SpacerImage />
-      <DetailsBox />
-      <Contact />
+      <DetailsBox id='services'/>
+      <Text />
+      <Contact id='contact'/>
       <Footer />
     </div>
   );

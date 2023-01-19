@@ -39,11 +39,11 @@ const StyledSection = styled.section`
     }
 `
 
-function Top() {
+function Top(props) {
 
 
     return (
-        <StyledSection id="home">
+        <StyledSection id={props.id}>
             <div className="titles">
                 <h1>{topData.mainHeading}</h1>
                 <div className="break1"></div>

@@ -72,11 +72,11 @@ const StyledFooter = styled.footer`
 `
 
 
-function Footer() {
+function Footer(props) {
 
 
     return (
-        <StyledFooter>
+        <StyledFooter id={props.id}>
             <div className="social-container">
                 <h3>{footerData.socialGreeting}</h3>
                 <nav className="social">

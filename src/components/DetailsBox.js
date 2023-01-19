@@ -67,7 +67,7 @@ const StyledSection = styled.section`
         & .details-text {
             display: flex;
             flex-direction: column;
-            width: 45%;
+            width: 60%;
             align-self: center;
 
             & p {
@@ -79,7 +79,7 @@ const StyledSection = styled.section`
 
 
         & .details-img {
-            width: 45%;
+            width: 30%;
             align-self: center;
         }
 
@@ -115,7 +115,7 @@ const StyledSection = styled.section`
     }
 
 `
-function DetailsBox() {
+function DetailsBox(props) {
     const [detailsText, setDetailsText] = useState([]);
     const [detailsImg, setDetailsImg] = useState('');
     const [detailsHeader, setDetailsHeader] = useState('');
@@ -142,7 +142,7 @@ function DetailsBox() {
 
 
     return (
-        <StyledSection id='services'>
+        <StyledSection id={props.id}>
             <h2>{detailsBoxData.mainText}</h2>
             <div className="container">
                 {detailsBoxData.detailsBoxNames.map((element, index) => {

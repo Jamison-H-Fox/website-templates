@@ -46,11 +46,11 @@ const StyledSection = styled.section`
     }
 `
 
-function TextImg() {
+function TextImg(props) {
     const contentArray = textImgData.content.split('&!&')
     
     return (
-        <StyledSection id="about">
+        <StyledSection id={props.id}>
             <div className="text">
                 {textImgData.icon}                
                 <h2>{textImgData.header}</h2>

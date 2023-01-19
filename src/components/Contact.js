@@ -57,11 +57,11 @@ const StyledSection = styled.section`
 `
 
 
-function Contact() {
+function Contact(props) {
 
 
     return (
-        <StyledSection id="contact">
+        <StyledSection id={props.id}>
             <h2>{contactData.mainText}</h2>
             <div className="map">
                 {contactData.mapEmbedCode}
