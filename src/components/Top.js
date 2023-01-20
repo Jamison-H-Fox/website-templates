@@ -1,11 +1,9 @@
 import React from "react"
-import { topData } from '../data/data'
 import styled from 'styled-components'
 import { brandPallet } from "../data/data"
 
 const StyledSection = styled.section`
     height: 85vh;
-    background-image: url('${topData.topImage_URL}');
     margin-top: 10vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,13 +41,13 @@ function Top(props) {
 
 
     return (
-        <StyledSection id={props.id}>
+        <StyledSection id={props.data.id} style={{backgroundImage:`url(${props.data.image})`}}>
             <div className="titles">
-                <h1>{topData.mainHeading}</h1>
+                <h1>{props.data.mainHeading}</h1>
                 <div className="break1"></div>
-                <h2>{topData.subHeading1}<br/>
+                <h2>{props.data.subHeading1}<br/>
                 <div className="break2"></div>
-                {topData.subHeading2}</h2>
+                {props.data.subHeading2}</h2>
             </div>
         </StyledSection>
     )

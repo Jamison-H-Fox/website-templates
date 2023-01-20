@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { contactData } from '../data/data'
 import { brandPallet } from "../data/data";
 
 const StyledSection = styled.section`
@@ -61,23 +60,23 @@ function Contact(props) {
 
 
     return (
-        <StyledSection id={props.id}>
-            <h2>{contactData.mainText}</h2>
+        <StyledSection id={props.data.id}>
+            <h2>{props.data.mainText}</h2>
             <div className="map">
-                {contactData.mapEmbedCode}
+                {props.data.mapEmbedCode}
             </div>
             <div className="left">
                 <div className="contact-info">
-                    <h3>{contactData.greeting}</h3>
-                    <address>{contactData.address1}<br/>{contactData.address2}<br/>
-                        <a href={`tel:${contactData.phone}`}>Phone: {contactData.phone}</a><br/>
-                        <a href={`mailto:${contactData.email}`}>Email: {contactData.email}</a>
+                    <h3>{props.data.greeting}</h3>
+                    <address>{props.data.address1}<br/>{props.data.address2}<br/>
+                        <a href={`tel:${props.data.phone}`}>Phone: {props.data.phone}</a><br/>
+                        <a href={`mailto:${props.data.email}`}>Email: {props.data.email}</a>
                     </address>
                 </div>
             </div>
             <div className="right">
                 <div className="img-container">
-                    <img src={contactData.contactImg_URL} alt={contactData.contactImg_alt} />
+                    <img src={props.data.img} alt={props.data.imgAlt} />
                 </div>
             </div>
         </StyledSection>

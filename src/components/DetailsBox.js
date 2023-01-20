@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { detailsBoxData } from '../data/data'
 import styled from 'styled-components'
 import { brandPallet } from "../data/data";
 
@@ -126,9 +125,9 @@ function DetailsBox(props) {
     };
 
     function changeText(evt) {
-        const text = detailsBoxData.detailsBoxText[evt.target.attributes["data-index"].value].split('&!&');
-        const img = detailsBoxData.detailsBoxImg[evt.target.attributes["data-index"].value];
-        const header = detailsBoxData.detailsBoxNames[evt.target.attributes["data-index"].value];
+        const text = props.data.text[evt.target.attributes["data-index"].value].split('&!&');
+        const img = props.data.img[evt.target.attributes["data-index"].value];
+        const header = props.data.titles[evt.target.attributes["data-index"].value];
         setDetailsText(text);
         setDetailsImg(img);
         setDetailsHeader(header)
@@ -142,10 +141,10 @@ function DetailsBox(props) {
 
 
     return (
-        <StyledSection id={props.id}>
-            <h2>{detailsBoxData.mainText}</h2>
+        <StyledSection id={props.data.id}>
+            <h2>{props.data.mainText}</h2>
             <div className="container">
-                {detailsBoxData.detailsBoxNames.map((element, index) => {
+                {props.data.titles.map((element, index) => {
                     return (
                         <div 
                             onClick={(event) => changeText(event)}
@@ -153,7 +152,7 @@ function DetailsBox(props) {
                             className="box"
                             data-index={index}
                             >
-                            <i data-index={index} className={detailsBoxData.detailsBoxIcons[index]}></i>
+                            <i data-index={index} className={props.data.icons[index]}></i>
                             <h3 data-index={index}>{element}</h3>
                         </div>
                     )
@@ -169,7 +168,7 @@ function DetailsBox(props) {
                 <div className='details-img'><img src={detailsImg}/></div>
                 <i className="fa-solid fa-xmark" onClick={() => hideDetails()}></i>
                 <div className='break'></div>
-                <button>{detailsBoxData.ctaButtonText}</button>
+                <button>{props.data.ctaButtonText}</button>
             </div>
         </StyledSection>
     )

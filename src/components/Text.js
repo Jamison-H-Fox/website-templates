@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { textData, brandPallet } from '../data/data';
+import { brandPallet } from '../data/data';
 
 const StyledDiv = styled.div`
     display: flex;
@@ -24,12 +24,12 @@ const StyledDiv = styled.div`
 `
 
 function Text(props) {
-    const textBodyArray = textData.textBody.split('&!&')
+    const textBodyArray = props.data.body.split('&!&')
 
     return (
-        <StyledDiv>
-            <h1>{textData.textHeader}</h1>
-            <h2>{textData.textDivider}</h2>
+        <StyledDiv id={props.data.id}>
+            <h1>{props.data.header}</h1>
+            <h2>{props.data.divider}</h2>
             {textBodyArray.map((string, index) => {
                 return (<h4 key={index}>{string}</h4>)
             })}

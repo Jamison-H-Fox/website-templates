@@ -1,5 +1,4 @@
 import React from "react";
-import { textImgData } from "../data/data";
 import styled from "styled-components";
 import { brandPallet } from "../data/data";
 
@@ -14,7 +13,6 @@ const StyledSection = styled.section`
     & .image {
         width: 25%;
         margin-left: 2.5%;
-        background-image: url('${textImgData.TextImg_Image}');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -47,18 +45,18 @@ const StyledSection = styled.section`
 `
 
 function TextImg(props) {
-    const contentArray = textImgData.content.split('&!&')
+    const contentArray = props.data.content.split('&!&')
     
     return (
-        <StyledSection id={props.id}>
+        <StyledSection id={props.data.id}>
             <div className="text">
-                {textImgData.icon}                
-                <h2>{textImgData.header}</h2>
+                {props.data.icon}                
+                <h2>{props.data.header}</h2>
                 {contentArray.map((string, index) => {
                     return (<p key={index}>{string}</p>)
                 })}
             </div>
-            <div className="image">
+            <div className="image" style={{backgroundImage:`url(${props.data.image})`}}>
 
             </div>
         </StyledSection>
