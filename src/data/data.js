@@ -1,6 +1,6 @@
 export const docData = {
     favicon: './resources/docData/megaphone favicon.png',
-    title: 'Megaphoneplatform.com'
+    title: 'Your Megaphone'
 }
 
 export const headerData = {
