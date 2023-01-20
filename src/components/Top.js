@@ -14,7 +14,7 @@ const StyledSection = styled.section`
 
     & .titles {
         padding: 2.5%;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.75);
         border-radius: 5px;
 
         & h1 {

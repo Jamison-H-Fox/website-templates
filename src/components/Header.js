@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
     align-items: center;
 
     & .logo {
-        height: 10vh;
+        height: 8vh;
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;

@@ -17,7 +17,6 @@ function App() {
       <Header data={data.headerData}/>
       <Top data={data.topData}/>
       <TextImg data={data.textImgData}/>
-      <ImgText data={data.imgTextData}/>
       <SpacerImage data={data.spacerImgageData}/>
       <DetailsBox data={data.detailsBoxData}/>
       <Text data={data.textData}/>
