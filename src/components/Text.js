@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
 `
 
 function Text(props) {
-    const textBodyArray = props.data.body.split('&!&')
+    const textBodyArray = props.data.body.split('&!&');
 
     return (
         <StyledDiv id={props.data.id}>

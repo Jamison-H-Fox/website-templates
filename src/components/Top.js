@@ -38,16 +38,17 @@ const StyledSection = styled.section`
 `
 
 function Top(props) {
-
+    const headerBodyArray = props.data.subHeading.split('&!&');
 
     return (
         <StyledSection id={props.data.id} style={{backgroundImage:`url(${props.data.image})`}}>
             <div className="titles">
                 <h1>{props.data.mainHeading}</h1>
                 <div className="break1"></div>
-                <h2>{props.data.subHeading1}<br/>
-                <div className="break2"></div>
-                {props.data.subHeading2}</h2>
+                {/* <h2>{props.data.subHeading}</h2> */}
+                {headerBodyArray.map((string, index) => {
+                    return (<h2 key={index}>{string}</h2>)
+                })}
             </div>
         </StyledSection>
     )

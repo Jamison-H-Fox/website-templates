@@ -1,25 +1,24 @@
 export const docData = {
     favicon: './resources/docData/megaphone favicon.png',
-    title: 'Your Megaphone'
+    title: 'website templates'
 }
 
 export const headerData = {
     id: '',
-    logo: './resources/header/megaphone.png',
+    logo: './resources/header/genericLogo.png',
     linkList: [
-        'Home',
-        'About',
-        'Services',
-        'Contact'
+        'These',
+        'Can',
+        'Be',
+        'Whatever'
     ]
 }
 
 export const topData = {
-    id: 'home',
-    mainHeading: 'We Amplify Your Voice',
-    subHeading1: 'and make sure your',
-    subHeading2: 'audience hears you',
-    image: './resources/top/purple.jpg'
+    id: 'these',
+    mainHeading: 'This is a template header',
+    subHeading: 'We made this for you',
+    image: './resources/top/lolR.jpg'
 }
 
 export const spacerImgageData = {
@@ -28,10 +27,10 @@ export const spacerImgageData = {
 }
 
 export const detailsBoxData = {
-    id: 'services',
+    id: 'can',
     mainText: 'Services We Offer:',
-    titles: ['Logo and Brand Consulting','Website Construction','Custom Web Apps'],
-    icons: ["fa-solid fa-pen-ruler","fa-solid fa-wrench","fa-brands fa-react"],
+    titles: ['Thing 1','Thing 2','Thing 3'],
+    icons: ["fa-solid fa-pen-ruler","fa-solid fa-hammer","fa-solid fa-rocket"],
     text: [
         `Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves swat at dog  intently sniff hand  why must they do that bag stretch, flop over chase imaginary bugs  rub face on everything inspect anything brought into the house all of a sudden go crazy chase mice  claw drapes lick butt need to chase tail  stand in front of the computer screen. &!& Give attitude flop over why must they do that claw drapes flop over behind the couch chase mice swat at dog need to chase tail bag stretch hunt anything that moves, stand in front of the computer screen rub face on everything hide when guests come over inspect anything brought into the house attack feet hopped up on goofballs intently sniff hand chase imaginary bugs.`,
         'Doggo ipsum wow such tempt pupper boofers, shoober. Pupperino fat boi stop it fren lotsa pats pats porgo, aqua doggo wow such tempt super chub.  Such treat I am bekom fat length boy wow very biscit, maximum borkdrive. Doggorino heckin angery woofer long water shoob snoot, doing me a frighten. Long woofer fluffer long bois dat tungg tho bork boof puggo vvv, big ol pupper pats shoob heckin good boys and girls very good spot. &!& Heckin good boys and girls mlem what a nice floof long bois, doggorino many pats. Wrinkler fluffer borkf heckin adorable doggo, long woofer the neighborhood pupper very taste wow smol, mlem heckin good boys and girls very hand t',
@@ -44,15 +43,15 @@ export const detailsBoxData = {
 export const imgTextData = {
     id: '',
     icon: <i className="fa-solid fa-code"></i>,
-    header: 'Our Story',
+    header: 'Your Story',
     content: `Doggo ipsum you are doin me a concern shoober shibe wrinkler, pats maximum borkdrive waggy wags shibe, shooberino porgo. &!& Noodle horse borking doggo long woofer ur givin me a spook borkf, floofs porgo very jealous pupper ruff I am bekom fat, fat boi you are doing me a frighten doggorino.  I am bekom fat aqua doggo thicc puggo noodle horse pupperino length boy shoober blep wrinkler, doggorino aqua doggo heckin good boys and girls you are doin me a concern waggy wags tungg very taste wow. &!& Clouds mlem what a nice floof blep puggo, heckin good boys borking doggo very good spot, long bois floofs length boy. Heckin good boys maximum borkdrive the neighborhood pupper waggy wags smol boof, stop it fren shoob doggo. Pats extremely cuuuuuute very taste.`,
     image: './resources/imgText/7ca258435cddde8b8f2ca4f75bedc94c.jpg'
 }
 
 export const textImgData = {
-    id: 'about',
-    icon: <i className="fa-solid fa-code"></i>,
-    header: 'Our Story',
+    id: 'be',
+    icon: <i className="fa-solid fa-book-open"></i>,
+    header: 'Your Story',
     content: `Doggo ipsum you are doin me a concern shoober shibe wrinkler, pats maximum borkdrive waggy wags shibe, shooberino porgo. &!& Noodle horse borking doggo long woofer ur givin me a spook borkf, floofs porgo very jealous pupper ruff I am bekom fat, fat boi you are doing me a frighten doggorino.  I am bekom fat aqua doggo thicc puggo noodle horse pupperino length boy shoober blep wrinkler, doggorino aqua doggo heckin good boys and girls you are doin me a concern waggy wags tungg very taste wow. &!& Clouds mlem what a nice floof blep puggo, heckin good boys borking doggo very good spot, long bois floofs length boy. Heckin good boys maximum borkdrive the neighborhood pupper waggy wags smol boof, stop it fren shoob doggo. Pats extremely cuuuuuute very taste.`,
     image: './resources/textImg/7ca258435cddde8b8f2ca4f75bedc94c.jpg'
 }
@@ -70,7 +69,7 @@ export const galleryData = {
 }
 
 export const contactData = {
-    id: 'contact',
+    id: 'whatever',
     mainText: 'Get in Touch',
     greeting: 'Find us at:',
     address1: '1633 W Innovation Way',
@@ -93,7 +92,7 @@ export const footerData = {
 
 export const brandPallet = {
     id: '',
-    primaryColor: '#422052',
+    primaryColor: '#fdde60',
     secondaryColor: '#4b6bb4',
     primaryFont: `"PT Sans", sans-serif`,
     secondaryFont: `"Nunito", sans-serif`
