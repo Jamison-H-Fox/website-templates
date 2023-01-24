@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Helmet>
-        {data.docData.fa}
+        {data.docData.fontAwesome}
         <title>{data.docData.title}</title>
         <link rel='shortcut icon' href={data.docData.favicon}></link>
         {data.docData.fonts.map((element) => {return element})}

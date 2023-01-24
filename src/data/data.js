@@ -14,7 +14,7 @@ export const docData = {
         <link key='1' rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>,
         <link key='2' href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"></link>
     ],
-    fa: <script src="https://kit.fontawesome.com/52cef79c70.js" crossorigin="anonymous"></script>
+    fontAwesome: <script src="https://kit.fontawesome.com/52cef79c70.js" crossorigin="anonymous"></script>
 }
 
 export const headerData = {
