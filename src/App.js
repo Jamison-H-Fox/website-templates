@@ -19,9 +19,7 @@ function App() {
         {data.docData.fa}
         <title>{data.docData.title}</title>
         <link rel='shortcut icon' href={data.docData.favicon}></link>
-        {data.docData.fonts.map((element,index) => {
-          return element
-        })}
+        {data.docData.fonts.map((element) => {return element})}
       </Helmet>
       <div className="App">
         <Header data={data.headerData}/>

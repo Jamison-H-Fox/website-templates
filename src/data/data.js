@@ -2,7 +2,7 @@ export const brandPallet = {
     id: '',
     primaryColor: '#fdde60',
     secondaryColor: '#4b6bb4',
-    primaryFont: `'Syncopate', sans-serif;`,
+    primaryFont: `"PT Sans", sans-serif;`,
     secondaryFont: `"Nunito", sans-serif`
 }
 
