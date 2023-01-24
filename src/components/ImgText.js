@@ -53,7 +53,7 @@ function ImgText(props) {
             <div className="image" style={{backgroundImage:`url(${props.data.image})`}}>
             </div>
             <div className="text">
-                {props.data.icon}                
+                <i className={props.data.icon}></i>
                 <h2>{props.data.header}</h2>
                 {contentArray.map((string, index) => {
                     return (<p key={index}>{string}</p>)

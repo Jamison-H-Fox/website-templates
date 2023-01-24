@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import React from "react";
 import Header from "./components/Header";
 import Top from "./components/Top";
@@ -13,17 +14,28 @@ import * as data from './data/data';
 function App() {
 
   return (
-    <div className="App">
-      <Header data={data.headerData}/>
-      <Top data={data.topData}/>
-      <TextImg data={data.textImgData}/>
-      <SpacerImage data={data.spacerImgageData}/>
-      <DetailsBox data={data.detailsBoxData}/>
-      <Text data={data.textData}/>
-      <Text data={data.textData2}/>
-      <Contact data={data.contactData}/>
-      <Footer data={data.footerData}/>
-    </div>
+    <>
+      <Helmet>
+        {data.docData.fa}
+        <title>{data.docData.title}</title>
+        <link rel='shortcut icon' href={data.docData.favicon}></link>
+        {data.docData.fonts.map((element,index) => {
+          return element
+        })}
+      </Helmet>
+      <div className="App">
+        <Header data={data.headerData}/>
+        <Top data={data.topData}/>
+        <TextImg data={data.textImgData}/>
+        <ImgText data={data.imgTextData}/>
+        <SpacerImage data={data.spacerImgageData}/>
+        <DetailsBox data={data.detailsBoxData}/>
+        <Text data={data.textData}/>
+        <Text data={data.textData2}/>
+        <Contact data={data.contactData}/>
+        <Footer data={data.footerData}/>
+      </div>
+    </>
   );
 }
 

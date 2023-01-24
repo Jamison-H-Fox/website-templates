@@ -1,6 +1,20 @@
+export const brandPallet = {
+    id: '',
+    primaryColor: '#fdde60',
+    secondaryColor: '#4b6bb4',
+    primaryFont: `'Syncopate', sans-serif;`,
+    secondaryFont: `"Nunito", sans-serif`
+}
+
 export const docData = {
     favicon: './resources/docData/megaphone favicon.png',
-    title: 'website templates'
+    title: 'website templates',
+    fonts: [
+        <link key='0' rel="preconnect" href="https://fonts.googleapis.com"></link>,
+        <link key='1' rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>,
+        <link key='2' href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&family=Syncopate:wght@400;700&display=swap" rel="stylesheet"></link>
+    ],
+    fa: <script src="https://kit.fontawesome.com/52cef79c70.js" crossorigin="anonymous"></script>
 }
 
 export const headerData = {
@@ -42,7 +56,7 @@ export const detailsBoxData = {
 
 export const imgTextData = {
     id: '',
-    icon: <i className="fa-solid fa-code"></i>,
+    icon: "fa-solid fa-code",
     header: 'Your Story',
     content: `Doggo ipsum you are doin me a concern shoober shibe wrinkler, pats maximum borkdrive waggy wags shibe, shooberino porgo. &!& Noodle horse borking doggo long woofer ur givin me a spook borkf, floofs porgo very jealous pupper ruff I am bekom fat, fat boi you are doing me a frighten doggorino.  I am bekom fat aqua doggo thicc puggo noodle horse pupperino length boy shoober blep wrinkler, doggorino aqua doggo heckin good boys and girls you are doin me a concern waggy wags tungg very taste wow. &!& Clouds mlem what a nice floof blep puggo, heckin good boys borking doggo very good spot, long bois floofs length boy. Heckin good boys maximum borkdrive the neighborhood pupper waggy wags smol boof, stop it fren shoob doggo. Pats extremely cuuuuuute very taste.`,
     image: './resources/imgText/7ca258435cddde8b8f2ca4f75bedc94c.jpg'
@@ -50,7 +64,7 @@ export const imgTextData = {
 
 export const textImgData = {
     id: 'be',
-    icon: <i className="fa-solid fa-book-open"></i>,
+    icon: "fa-solid fa-book-open",
     header: 'Your Story',
     content: `Doggo ipsum you are doin me a concern shoober shibe wrinkler, pats maximum borkdrive waggy wags shibe, shooberino porgo. &!& Noodle horse borking doggo long woofer ur givin me a spook borkf, floofs porgo very jealous pupper ruff I am bekom fat, fat boi you are doing me a frighten doggorino.  I am bekom fat aqua doggo thicc puggo noodle horse pupperino length boy shoober blep wrinkler, doggorino aqua doggo heckin good boys and girls you are doin me a concern waggy wags tungg very taste wow. &!& Clouds mlem what a nice floof blep puggo, heckin good boys borking doggo very good spot, long bois floofs length boy. Heckin good boys maximum borkdrive the neighborhood pupper waggy wags smol boof, stop it fren shoob doggo. Pats extremely cuuuuuute very taste.`,
     image: './resources/textImg/7ca258435cddde8b8f2ca4f75bedc94c.jpg'
@@ -88,14 +102,6 @@ export const footerData = {
     icons: [<i className="fa-brands fa-instagram"></i>,<i className="fa-brands fa-square-facebook"></i>,<i className="fa-brands fa-square-twitter"></i>,<i className="fa-brands fa-linkedin"></i>],
     linkList: [...headerData.linkList],
     copyright: '© Megaphone 2023'
-}
-
-export const brandPallet = {
-    id: '',
-    primaryColor: '#fdde60',
-    secondaryColor: '#4b6bb4',
-    primaryFont: `"PT Sans", sans-serif`,
-    secondaryFont: `"Nunito", sans-serif`
 }
 
 export const textData = {
