@@ -13,24 +13,6 @@ import * as data from './data/data';
 
 function App() {
 
-  // useEffect(() => {
-  //   const primaryFontSetter = getComputedStyle(document.documentElement).getPropertyValue('--primary-font');
-  //   document.documentElement.style.setProperty('--primary-font', data.brandPallet.primaryFont)
-  //   const secondaryFontSetter = getComputedStyle(document.documentElement).getPropertyValue('--secondary-font');
-  //   document.documentElement.style.setProperty(`--secondary-font`, data.brandPallet.secondaryFont)
-  //   const primaryColorSetter = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
-  //   document.documentElement.style.setProperty(`--primary-color`, data.brandPallet.primaryColor)
-  //   const secondaryColorSetter = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color');
-  //   document.documentElement.style.setProperty(`--secondary-color`, data.brandPallet.secondaryColor)
-  //   const lightThemeBackgroundSetter = getComputedStyle(document.documentElement).getPropertyValue('--light-theme-background');
-  //   document.documentElement.style.setProperty(`--light-theme-background`, data.brandPallet.lightThemeBackground)
-  //   const darkThemeBackgroundSetter = getComputedStyle(document.documentElement).getPropertyValue('--dark-theme-background');
-  //   document.documentElement.style.setProperty(`--dark-theme-background`, data.brandPallet.darkThemeBackground)
-  //   const boxRadiusSetter = getComputedStyle(document.documentElement).getPropertyValue('--box-radius');
-  //   document.documentElement.style.setProperty(`--box-radius`, data.brandPallet.boxRadius)
-  //   const dropShadowSetter = getComputedStyle(document.documentElement).getPropertyValue('--drop-shadow');
-  //   document.documentElement.style.setProperty(`--drop-shadow`, data.brandPallet.dropShadow)
-  // },[])
 
   return (
     <>
