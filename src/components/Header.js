@@ -34,10 +34,9 @@ const StyledHeader = styled.header`
             text-decoration: none;
             letter-spacing: 3px;
             color: #4f4f4f;
-            font-family: ${brandPallet.primaryFont};
             
             &:hover {
-                color: ${brandPallet.primaryBackgroundColor};
+                color: ${brandPallet.primaryColor};
             }
         }        
     }

@@ -1,13 +1,17 @@
 export const brandPallet = {
     id: '',
     primaryColor: '#fdde60',
-    secondaryColor: '#4b6bb4',
-    primaryFont: `"PT Sans", sans-serif;`,
-    secondaryFont: `"Nunito", sans-serif`
+    secondaryColor: '#fffdeb',
+    primaryFont: `'Syncopate', sans-serif;`,
+    secondaryFont: `"Nunito", sans-serif;`,
+    lightThemeBackground: '#fffafa',
+    darkThemeBackground: '#303030',
+    boxRadius: '0px',
+    dropShadow: 'none',
 }
 
 export const docData = {
-    favicon: './resources/docData/megaphone favicon.png',
+    favicon: './resources/docData/megaphone logo favicon.png',
     title: 'website templates',
     fonts: [
         <link key='0' rel="preconnect" href="https://fonts.googleapis.com"></link>,
@@ -86,20 +90,20 @@ export const contactData = {
     id: 'whatever',
     mainText: 'Get in Touch',
     greeting: 'Find us at:',
-    address1: '1633 W Innovation Way',
+    address1: '4 W Main Street',
     address2: 'Lehi, UT 84043',
     phone: '801-903-8637',
-    email: 'jamison@silverfoxdesign.org',
+    email: 'info@megaphoneplatform.com',
     img: './resources/contact/66b5c9a52cfe186caf97ebe3526be30d.jpg',
     imgAlt: 'a hella cute silver kitten',
-    mapEmbedCode: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.009115113522!2d-111.87784078436574!3d40.430797062707434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752801c6bbdc83f%3A0x5b40fa56e14880b2!2s1633%20W%20Innovation%20Way%2C%20Lehi%2C%20UT%2084043!5e0!3m2!1sen!2sus!4v1669275846122!5m2!1sen!2sus"></iframe>
+    mapEmbedCode: <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.7348304338807!2d-111.8505036642873!3d40.38803741607088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d81d1600be543%3A0xd4a76f0c2a4e24f2!2s4%20W%20Main%20St%2C%20Lehi%2C%20UT%2084043!5e0!3m2!1sen!2sus!4v1674705596084!5m2!1sen!2sus"></iframe>
 }
 
 export const footerData = {
     id: '',
     heading: 'Connect with us on social media',
     links: ["http://instagram.com","http://facebook.com","http://twitter.com",'http://linkedin.com'],
-    icons: [<i className="fa-brands fa-instagram"></i>,<i className="fa-brands fa-square-facebook"></i>,<i className="fa-brands fa-square-twitter"></i>,<i className="fa-brands fa-linkedin"></i>],
+    icons: ["fa-brands fa-instagram","fa-brands fa-square-facebook","fa-brands fa-square-twitter","fa-brands fa-linkedin"],
     linkList: [...headerData.linkList],
     copyright: '© Megaphone 2023'
 }

@@ -8,7 +8,6 @@ const StyledSection = styled.section`
     align-items: center;
 
     & h2 {
-        font-family: ${brandPallet.primaryFont};
         font-size: 4.5rem;
     }
     
@@ -35,7 +34,6 @@ const StyledSection = styled.section`
                 display: flex;
                 justify-content: center;
                 margin: 15% 0 0 0;
-                font-family: ${brandPallet.primaryFont}
             }
         }
     }

@@ -81,7 +81,7 @@ function Footer(props) {
                 <nav className="social">
                     {props.data.links.map((element, index) => {
                         return (
-                            <a key={index} href={element} target='_blank'><i className={props.data.icons} index={index}></i></a>
+                            <a key={index} href={element} target='_blank'><i className={props.data.icons[index]} key={index}></i></a>
                         )
                     })}
                 </nav>

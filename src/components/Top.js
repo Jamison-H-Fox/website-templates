@@ -17,14 +17,6 @@ const StyledSection = styled.section`
         background-color: rgba(255, 255, 255, 0.75);
         border-radius: 5px;
 
-        & h1 {
-            font-family: ${brandPallet.primaryFont};
-        }
-
-        & h2 {
-            font-family: ${brandPallet.primaryFont};
-        }
-
         & .break1 {
             width: 100%;
             height: 3vh;
@@ -45,9 +37,8 @@ function Top(props) {
             <div className="titles">
                 <h1>{props.data.mainHeading}</h1>
                 <div className="break1"></div>
-                {/* <h2>{props.data.subHeading}</h2> */}
                 {headerBodyArray.map((string, index) => {
-                    return (<h2 key={index}>{string}</h2>)
+                    return (<h3 key={index}>{string}</h3>)
                 })}
             </div>
         </StyledSection>

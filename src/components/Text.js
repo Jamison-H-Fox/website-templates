@@ -14,12 +14,16 @@ const StyledDiv = styled.div`
 
     & h2 {
         margin: 1.25%;
+    }
+    
+    .divider {
         color: ${brandPallet.primaryColor};
     }
 
-    & h4 {
+    & p {
         width: 50%;
         margin: 1.25%;
+        text-align: center;
     }
 `
 
@@ -28,10 +32,10 @@ function Text(props) {
 
     return (
         <StyledDiv id={props.data.id}>
-            <h1>{props.data.header}</h1>
-            <h2>{props.data.divider}</h2>
+            <h2>{props.data.header}</h2>
+            <h2 className="divider">{props.data.divider}</h2>
             {textBodyArray.map((string, index) => {
-                return (<h4 key={index}>{string}</h4>)
+                return (<p key={index}>{string}</p>)
             })}
         </StyledDiv>
     )

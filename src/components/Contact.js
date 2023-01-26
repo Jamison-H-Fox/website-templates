@@ -6,21 +6,20 @@ const StyledSection = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    background-color: ${brandPallet.secondaryColor};
 
     // & * {
     //     border: red 1px solid;
     // }
 
     & h2 {
-        font-family: ${brandPallet.primaryFont};
         width: 100%;
         margin-bottom: 2.5%;
     }
 
     & .left, .right {
-        width: 33%;
+        width: 45%;
         padding: 4% 0;
         display: flex;
         justify-content: center;
@@ -29,20 +28,23 @@ const StyledSection = styled.section`
 
     & .map {
         display: flex;
+        width: 100%;
 
+        & iframe {
+            width: 100%;
+            height: 30vh;
+        }
     }
 
     & .contact-info {
-        width: 85%;
+        width: 90%;
         line-height: 2;
 
         & h3 {
-            font-family: ${brandPallet.primaryFont};
             text-align: left;
         }
 
         & address, a {
-            font-family: ${brandPallet.secondaryFont};
             text-decoration: none;
             color: #4f4f4f;
         }
@@ -62,9 +64,6 @@ function Contact(props) {
     return (
         <StyledSection id={props.data.id}>
             <h2>{props.data.mainText}</h2>
-            <div className="map">
-                {props.data.mapEmbedCode}
-            </div>
             <div className="left">
                 <div className="contact-info">
                     <h3>{props.data.greeting}</h3>
@@ -78,6 +77,9 @@ function Contact(props) {
                 <div className="img-container">
                     <img src={props.data.img} alt={props.data.imgAlt} />
                 </div>
+            </div>
+            <div className="map">
+                {props.data.mapEmbedCode}
             </div>
         </StyledSection>
     )

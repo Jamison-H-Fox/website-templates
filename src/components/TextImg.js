@@ -29,11 +29,9 @@ const StyledSection = styled.section`
         & p {
             margin: 2.5% 0 2.5% 0;
             text-align: left;
-            font-family: ${brandPallet.secondaryFont};
         }
 
         & h2 {
-            font-family: ${brandPallet.primaryFont};
             margin-bottom: 2.5%;
         }
 

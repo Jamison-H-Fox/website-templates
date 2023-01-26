@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { brandPallet } from "../data/data";
 
 const StyledSection = styled.section`
     height: 40vh;

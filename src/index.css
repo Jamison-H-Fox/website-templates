@@ -32,10 +32,7 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -44,6 +41,17 @@ table {
   border-spacing: 0;
 }
 
+/* Custom Properties */
+:root {
+  --primary-font: '';
+  --secondary-font: "Nunito", sans-serif;;
+  --primary-color: #fdde60;
+  --secondary-color: #fffdeb;
+  --light-theme-background: #fffafa;
+  --dark-theme-background: #303030;
+  --box-radius: 0px;
+  --drop-shadow: none;
+}
 /* General Styles */
 * {
   box-sizing: border-box;
@@ -57,25 +65,25 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #4f4f4f;
-  font-family: "PT Sans", sans-serif;
+  color: rgb(43, 40, 40);
   background-color: #fffafa;
+  font-family: var(--secondary-font);
 }
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   letter-spacing: 3px;
   text-align: center;
 }
 h1 {
   font-size: 5rem;
+  font-family: var(--primary-font);
 }
 h2 {
   font-size: 3rem;
+  font-family: var(--primary-font);
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: var(--secondary-font);
 }
 section {
   padding: 4% 0;
@@ -83,94 +91,6 @@ section {
 i {
   font-size: 5rem;
 }
-
-/* Media Queries */
-/* Tablet */
-@media (max-width: 800px) {
-  .links {
-    width: 70%;
-  }
-  #about .text {
-    width: 80%;
-  }
-  .gallery div .hide {
-    background-color: #fff;
-    display: block;
-    width: 70%;
-  }
-  .gallery div .hide h2 {
-    font-size: 2.2rem;
-  }
-  .contact-info {
-    width: 50%;
-  }
-  .img-container {
-    width: 80%;
-  }
-  .left {
-    width: 60%;
-  }
-  .right {
-    width: 40%;
-  }
-}
-
-/* Phone Media Query */
-@media (max-width: 500px) {
-  header nav {
-    flex-direction: column;
-    height: 18vh;
-  }
-  .links {
-    width: 100%;
-  }
-  .logo {
-    text-align: center;
-  }
-  .titles {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .container {
-    flex-wrap: wrap;
-  }
-  .box {
-    width: 90%;
-    margin: 4% 0;
-  }
-  #about .text {
-    width: 90%;
-  }
-  .gallery div {
-    width: 90%;
-  }
-  #contact {
-    justify-content: center;
-  }
-  .left,
-  .right {
-    width: 90%;
-  }
-  .right {
-    order: -1;
-  }
-  #contact h2 {
-    order: -2;
-  }
-  .img-container {
-    width: 90%;
-  }
-  .contact-info {
-    width: 90%;
-  }
-  footer {
-    flex-wrap: wrap;
-  }
-  footer div {
-    width: 90%;
-    margin: 4% 0;
-  }
-  .copyright {
-    justify-content: flex-start;
-    /* font-family: 'Times New Roman', Times, serif; */
-  }
+address {
+  font-size: 2.5rem;
 }
