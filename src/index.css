@@ -43,8 +43,8 @@ table {
 
 /* Custom Properties */
 :root {
-  --primary-font: '';
-  --secondary-font: "Nunito", sans-serif;;
+  --primary-font: 'Syncopate', sans-serif;
+  --secondary-font: "Nunito", sans-serif;
   --primary-color: #fdde60;
   --secondary-color: #fffdeb;
   --light-theme-background: #fffafa;
@@ -78,7 +78,7 @@ h1 {
   font-family: var(--primary-font);
 }
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: var(--primary-font);
 }
 h3 {
@@ -93,4 +93,9 @@ i {
 }
 address {
   font-size: 2.5rem;
+}
+button {
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }

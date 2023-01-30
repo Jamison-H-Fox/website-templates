@@ -94,15 +94,14 @@ const StyledSection = styled.section`
 
         & button {
             font-size: 1.75rem;
-            font-family: ${brandPallet.primaryFont};
-            background-color: ${brandPallet.primaryColor};
             border-radius: 10px;
-            border: none;
-            padding: 2.5%;
+            padding: 1.25%;
             margin-top: 2.5%;
             
             &:hover {
-                cursor: pointer;                   
+                cursor: pointer;
+                background-color: ${brandPallet.secondaryColor};
+                border: 2px solid ${brandPallet.primaryColor};
             }
         }
     }
