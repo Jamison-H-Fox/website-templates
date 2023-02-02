@@ -13,18 +13,20 @@ const StyledSection = styled.section`
     align-items: center;
 
     & .titles {
+        // & * {
+        //     border: red 1px solid;
+        // }
+
+        display: flex;
+        flex-direction: column;
+        // width: 90%;
         padding: 2.5%;
         background-color: rgba(255, 255, 255, 0.75);
         border-radius: 5px;
 
-        & .break1 {
+        & .break {
             width: 100%;
             height: 3vh;
-        }
-
-        & .break2 {
-            width: 100%;
-            height: 0.5vh;
         }
     }
 `
@@ -36,7 +38,7 @@ function Top(props) {
         <StyledSection id={props.data.id} style={{backgroundImage:`url(${props.data.image})`}}>
             <div className="titles">
                 <h1>{props.data.mainHeading}</h1>
-                <div className="break1"></div>
+                <div className="break"></div>
                 {headerBodyArray.map((string, index) => {
                     return (<h3 key={index}>{string}</h3>)
                 })}

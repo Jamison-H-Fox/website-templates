@@ -1,8 +1,11 @@
-import React from "react";
-import styled from 'styled-components'
+import React, { useState } from "react";
+import styled from 'styled-components';
 import { brandPallet } from "../data/data";
 
 const StyledHeader = styled.header`
+& * {
+    // border: 1px red solid;
+}
 
 & nav {
     position: fixed;
@@ -20,15 +23,16 @@ const StyledHeader = styled.header`
         background-position: left;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 25%;
-        margin-left: 10%;
+        width: 50%;
+        margin-left: 5%;
         opacity: .75;
     }
     
     & .links {
-        width: 50%;
+        margin-right: 5%;
+        width: 33%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         & a {
             text-decoration: none;
@@ -38,20 +42,28 @@ const StyledHeader = styled.header`
             &:hover {
                 color: ${brandPallet.primaryColor};
             }
-        }        
+        }
     }
 }
-
 `
 
 function Header(props) {
+    const [hidden, setHidden] = useState(false)
+
+    const handleHidden = () => {
+        setHidden(!hidden);
+        // handle assignment of classNames here rather than in the render?
+    }
 
     return (
         <StyledHeader id={props.data.id}>
             <nav>
                 <div className="logo" style={{backgroundImage:`url(${props.data.logo})`}}>
                 </div>
-                <div className="links">
+                {/* <div onClick={() => {handleHidden()}}>
+                    <i className="fa-solid fa-bars"></i>
+                </div> */}
+                <div className='links' >
                     {props.data.linkList.map((element, idx) => {
                         return <a key={idx} href={`#${element.toLowerCase()}`}>{element}</a>
                     })}
