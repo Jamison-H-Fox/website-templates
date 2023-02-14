@@ -4,7 +4,7 @@ import { brandPallet } from "../data/data";
 
 const StyledHeader = styled.header`
 & * {
-    // border: 1px red solid;
+    border: 1px red solid;
 }
 
 & nav {
@@ -32,12 +32,16 @@ const StyledHeader = styled.header`
         margin-right: 5%;
         width: 33%;
         display: flex;
-        justify-content: space-between;
+
+        & i {
+            justify-content: flex-end;
+        }
 
         & a {
             text-decoration: none;
             letter-spacing: 3px;
             color: #4f4f4f;
+            justify-content: space-between;
             
             &:hover {
                 color: ${brandPallet.primaryColor};
@@ -60,14 +64,12 @@ function Header(props) {
             <nav>
                 <div className="logo" style={{backgroundImage:`url(${props.data.logo})`}}>
                 </div>
-                {/* <div onClick={() => {handleHidden()}}>
-                    <i className="fa-solid fa-bars"></i>
-                </div> */}
-                <div className='links' >
+                <i className="fa-solid fa-bars links"></i>
+                {/* <div className='links' >
                     {props.data.linkList.map((element, idx) => {
                         return <a key={idx} href={`#${element.toLowerCase()}`}>{element}</a>
                     })}
-                </div>
+                </div> */}
             </nav>
         </StyledHeader>
     )
