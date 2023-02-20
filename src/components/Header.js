@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { brandPallet } from "../data/data";
 
 const StyledHeader = styled.header`
-& * {
-    border: 1px red solid;
-}
+// & * {
+//     border: 1px red solid;
+// }
 
 & nav {
     position: fixed;
@@ -29,6 +29,8 @@ const StyledHeader = styled.header`
     }
     
     & .links {
+        display: flex;
+        justify-content: space-between;
         margin-right: 5%;
         width: 33%;
         display: flex;
@@ -64,12 +66,12 @@ function Header(props) {
             <nav>
                 <div className="logo" style={{backgroundImage:`url(${props.data.logo})`}}>
                 </div>
-                <i className="fa-solid fa-bars links"></i>
-                {/* <div className='links' >
+                {/* <i className="fa-solid fa-bars links"></i> */}
+                <div className='links' >
                     {props.data.linkList.map((element, idx) => {
                         return <a key={idx} href={`#${element.toLowerCase()}`}>{element}</a>
                     })}
-                </div> */}
+                </div>
             </nav>
         </StyledHeader>
     )
